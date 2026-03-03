@@ -1,0 +1,10 @@
+langchain
+langchain-community
+langchain-openai
+langchain-google-genai
+langchain-postgres
+langchain-text-splitters
+pypdf
+psycopg2-binary
+python-dotenv
+pgvector
