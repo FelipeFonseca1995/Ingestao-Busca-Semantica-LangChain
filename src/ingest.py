@@ -24,8 +24,8 @@ def get_embeddings():
         if not api_key:
             print("Erro: A variável GOOGLE_API_KEY não está definida no arquivo .env")
             sys.exit(1)
-        # O models/embedding-001 produz embeddings usando a API do Google
-        return GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+        # O models/gemini-embedding-001 produz embeddings usando a API do Google (versão atualizada do embedding-001)
+        return GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
     else:
         print(f"Erro: Provider '{provider}' não suportado. Use 'openai' ou 'gemini'.")
         sys.exit(1)
