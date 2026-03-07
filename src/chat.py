@@ -26,7 +26,7 @@ def get_llm():
         if not api_key:
             print("Erro: A variável GOOGLE_API_KEY não está definida no arquivo .env")
             sys.exit(1)
-        return ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite", temperature=0)
+        return ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
     else:
         print(f"Erro: Provider '{provider}' não suportado.")
         sys.exit(1)
